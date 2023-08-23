@@ -50,9 +50,8 @@ ol {
 .content {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 133px 0 133px;
+  padding: 133px 0;
   display: flex;
-  vertical-align: bottom;
   gap: 30px;
 }
 
