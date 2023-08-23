@@ -88,6 +88,7 @@ ol {
   max-height: 386px;
   padding-bottom: 16px;
   position: relative;
+  z-index: 2;
 }
 
 .result__video {
@@ -99,6 +100,7 @@ ol {
 
 .content__list {
   position: relative;
+  z-index: 2;
 }
 
 .content__list::-webkit-scrollbar {
