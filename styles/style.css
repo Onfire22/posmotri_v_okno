@@ -36,3 +36,267 @@ ul,
 ol {
   list-style: none;
 }
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.content {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-top: 133px;
+  display: flex;
+  vertical-align: bottom;
+  gap: 30px;
+}
+
+.search-form {
+  max-height: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.content__list {
+  max-height: 298px;
+  overflow-y: scroll;
+}
+
+.content__details {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.result {
+  padding-top: 78px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.result__video-container {
+  width: 711px;
+  max-height: 386px;
+  padding-bottom: 16px;
+  position: relative;
+}
+
+.result__video {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.content__list {
+  position: relative;
+}
+
+.content__list::-webkit-scrollbar {
+  width: 0px;
+}
+
+.content__list-item {
+  padding-bottom: 30px;
+}
+
+.content__list-item:last-child {
+  padding-bottom: 0;
+}
+
+.content__card-link {
+  display: block;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+}
+
+.content__video-card {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 394px;
+  height: 107px;
+}
+
+.content__video-card-thumbnail {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.content__video-card-description-container {
+  width: 100%;
+  height: 100%;
+}
+
+.search-form__fieldset-title {
+  color: #FFF;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 5px;
+}
+
+.title {
+  font-family: Oswald, sans-serif;
+  color: #fff;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__card-link {
+  margin: 2px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.content__video-card-title {
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+}
+
+.content__video-card-description {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__label {
+  width: fit-content;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-form__textfield {
+  width: 225px;
+  height: 27px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.70);
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  appearance: none;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+  width: 212px;
+  height: 22px;
+}
+
+input[type="checkbox"] + .search-form__pseudo-checkbox {
+  display: block;
+  border: 1px solid #fff;
+  background-color: #000;
+  width: 19px;
+  height: 19px;
+}
+
+.button {
+  background-color: transparent;
+  align-self: flex-end;
+  height: 34px;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: 1px solid #FFF;
+  cursor: pointer;
+}
+
+.search-form__submit-button {
+  width: 194px;
+}
+
+.more-button {
+  width: 399px;
+}
+
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+}
+
+input[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
+  content: '';
+  display: inline-block;
+  background: #fff center / cover no-repeat;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.search-form__checkbox-list > .search-form__label:hover {
+  text-decoration: underline;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #FFF;
+}
