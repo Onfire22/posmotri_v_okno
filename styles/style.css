@@ -224,6 +224,14 @@ ol {
   height: 22px;
 }
 
+.search-form__checkbox[type="checkbox"] + .search-form__pseudo-checkbox {
+  display: block;
+  border: 1px solid #fff;
+  background-color: transparent;
+  width: 19px;
+  height: 19px;
+}
+
 .search-form__checkbox[type="checkbox"] + .search-form__pseudo-checkbox:active {
   display: inline-block;
   width: 15px;
@@ -232,13 +240,6 @@ ol {
   border: 1px solid #000;
 }
 
-.search-form__checkbox[type="checkbox"] + .search-form__pseudo-checkbox {
-  display: block;
-  border: 1px solid #fff;
-  background-color: transparent;
-  width: 19px;
-  height: 19px;
-}
 
 .button {
   background-color: transparent;
