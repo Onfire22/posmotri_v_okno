@@ -133,7 +133,6 @@ ol {
 .content__video-card-thumbnail {
   display: block;
   max-width: 194px;
-  max-height: 103px;
   object-fit: cover;
   object-position: center;
 }
