@@ -231,15 +231,6 @@ ol {
   height: 19px;
 }
 
-.search-form__checkbox[type="checkbox"] + .search-form__pseudo-checkbox:active {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background: #fff  center / cover no-repeat;
-  border: 1px solid #000;
-}
-
-
 .button {
   background-color: transparent;
   align-self: flex-end;
@@ -271,7 +262,8 @@ ol {
   outline: 1px solid #fff;
 }
 
-.search-form__checkbox[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
+.search-form__checkbox[type="checkbox"]:checked + .search-form__pseudo-checkbox::before,
+.search-form__checkbox[type="checkbox"]:active + .search-form__pseudo-checkbox::before {
   content: '';
   display: inline-block;
   background: #fff center / cover no-repeat;
